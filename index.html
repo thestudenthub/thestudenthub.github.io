@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <canvas id="canvas" width="window.innerWidth" height="window.innerHeight"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
     <script src="p5.dom.js"></script>
     <script> 
@@ -9,7 +8,7 @@
       var y = [];
       var trailSize = 30;
       function setup() {
-        canvas = document.getElementById('canvas');
+        canvas = createCanvas(window.innerWidth, window.innerHeight);
         for (var i = 0; i < x.length; i++) {
           x[i] = 0;
           y[i] = 0;
