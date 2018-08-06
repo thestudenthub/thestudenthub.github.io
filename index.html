@@ -24,6 +24,7 @@
           x[i] = x[i + 1];
           y[i] = y[i + 1];
           fill(i*2);
+          noStroke();
           ellipse(x[i], y[i], i, i);
         }
         x[x.length-1] = mouseX;
