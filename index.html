@@ -8,7 +8,7 @@
       var y = [];
       var trailSize = 30;
       function setup() {
-        canvas = createCanvas(window.innerWidth, window.innerHeight);
+        canvas = document.getElementById('canvas');
         for (var i = 0; i < x.length; i++) {
           x[i] = 0;
           y[i] = 0;
@@ -44,6 +44,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   </head>
   <body>
+    <canvas id="canvas" width="window.innerWidth" height="window.innerHeight"></canvas>
     <div class="topnav">
       <a href="/">Home</a>
       <button class="dropbtn">Games 
