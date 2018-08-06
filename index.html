@@ -36,6 +36,13 @@
         x[x.length-1] = mouseX;
         y[y.length-1] = mouseY;
       }
+      window.onresize = function() {
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        canvas.size(w,h);
+        width = w;
+        height = h;
+      };
     </script>
     <title>STSAH - Home</title>
     <link href="/index.css" rel="stylesheet" type="text/css" />
